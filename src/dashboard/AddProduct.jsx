@@ -18,7 +18,7 @@ export default function AddProduct() {
 
   const addToStore = async () => {
     // Posting Product
-    const baseURL = "http://localhost:5000/add";
+    const baseURL = "https://my-store545.herokuapp.com/add";
     let config = { headers: { "Content-Type": "application/json" } };
     try {
       const response = await axios.post(baseURL, product, config);

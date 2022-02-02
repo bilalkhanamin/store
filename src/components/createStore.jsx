@@ -19,7 +19,7 @@ export default function createStore() {
   const data = { ...ownerInfo, storeInfo };
 
   const AddStore = () => {
-    const baseURL = "http://localhost:5000/createstore";
+    const baseURL = "https://my-store545.herokuapp.com/createstore";
     let config = { headers: { "Content-Type": "application/json" } };
     try {
       axios.post(baseURL, data, config).then((res) => {

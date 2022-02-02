@@ -6,7 +6,7 @@ export default function Products() {
   const [products, setProducts] = useState();
 
   const getProducts = async () => {
-    const baseURL = "http://localhost:5000/products";
+    const baseURL = "https://my-store545.herokuapp.com/products";
     const response = await axios.get(baseURL);
     if (response) {
        setProducts(response.data);
